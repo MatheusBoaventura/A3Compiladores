@@ -7,49 +7,133 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface CalculadoraListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link CalculadoraParser#prog}.
+	 * Enter a parse tree produced by {@link CalculadoraParser#program}.
 	 * @param ctx the parse tree
 	 */
-	void enterProg(CalculadoraParser.ProgContext ctx);
+	void enterProgram(CalculadoraParser.ProgramContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CalculadoraParser#prog}.
+	 * Exit a parse tree produced by {@link CalculadoraParser#program}.
 	 * @param ctx the parse tree
 	 */
-	void exitProg(CalculadoraParser.ProgContext ctx);
+	void exitProgram(CalculadoraParser.ProgramContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code par}
-	 * labeled alternative in {@link CalculadoraParser#expr}.
+	 * Enter a parse tree produced by {@link CalculadoraParser#statement}.
 	 * @param ctx the parse tree
 	 */
-	void enterPar(CalculadoraParser.ParContext ctx);
+	void enterStatement(CalculadoraParser.StatementContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code par}
-	 * labeled alternative in {@link CalculadoraParser#expr}.
+	 * Exit a parse tree produced by {@link CalculadoraParser#statement}.
 	 * @param ctx the parse tree
 	 */
-	void exitPar(CalculadoraParser.ParContext ctx);
+	void exitStatement(CalculadoraParser.StatementContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code num}
-	 * labeled alternative in {@link CalculadoraParser#expr}.
+	 * Enter a parse tree produced by {@link CalculadoraParser#declaration}.
 	 * @param ctx the parse tree
 	 */
-	void enterNum(CalculadoraParser.NumContext ctx);
+	void enterDeclaration(CalculadoraParser.DeclarationContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code num}
-	 * labeled alternative in {@link CalculadoraParser#expr}.
+	 * Exit a parse tree produced by {@link CalculadoraParser#declaration}.
 	 * @param ctx the parse tree
 	 */
-	void exitNum(CalculadoraParser.NumContext ctx);
+	void exitDeclaration(CalculadoraParser.DeclarationContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code OpBin}
-	 * labeled alternative in {@link CalculadoraParser#expr}.
+	 * Enter a parse tree produced by {@link CalculadoraParser#type}.
 	 * @param ctx the parse tree
 	 */
-	void enterOpBin(CalculadoraParser.OpBinContext ctx);
+	void enterType(CalculadoraParser.TypeContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code OpBin}
-	 * labeled alternative in {@link CalculadoraParser#expr}.
+	 * Exit a parse tree produced by {@link CalculadoraParser#type}.
 	 * @param ctx the parse tree
 	 */
-	void exitOpBin(CalculadoraParser.OpBinContext ctx);
+	void exitType(CalculadoraParser.TypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#assignment}.
+	 * @param ctx the parse tree
+	 */
+	void enterAssignment(CalculadoraParser.AssignmentContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#assignment}.
+	 * @param ctx the parse tree
+	 */
+	void exitAssignment(CalculadoraParser.AssignmentContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#ifStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterIfStatement(CalculadoraParser.IfStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#ifStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitIfStatement(CalculadoraParser.IfStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#whileStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterWhileStatement(CalculadoraParser.WhileStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#whileStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitWhileStatement(CalculadoraParser.WhileStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#doWhileStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterDoWhileStatement(CalculadoraParser.DoWhileStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#doWhileStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitDoWhileStatement(CalculadoraParser.DoWhileStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#forStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterForStatement(CalculadoraParser.ForStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#forStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitForStatement(CalculadoraParser.ForStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#printStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintStatement(CalculadoraParser.PrintStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#printStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintStatement(CalculadoraParser.PrintStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#scanStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterScanStatement(CalculadoraParser.ScanStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#scanStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitScanStatement(CalculadoraParser.ScanStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#condition}.
+	 * @param ctx the parse tree
+	 */
+	void enterCondition(CalculadoraParser.ConditionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#condition}.
+	 * @param ctx the parse tree
+	 */
+	void exitCondition(CalculadoraParser.ConditionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CalculadoraParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpression(CalculadoraParser.ExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculadoraParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpression(CalculadoraParser.ExpressionContext ctx);
 }

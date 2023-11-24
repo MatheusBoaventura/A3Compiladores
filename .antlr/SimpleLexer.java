@@ -1,4 +1,4 @@
-// Generated from Calculadora.g4 by ANTLR 4.13.1
+// Generated from c://Users//Matheus//Desktop//AntLR//ANTLRTrab//.antlr//Calculadora.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -9,7 +9,7 @@ import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue", "this-escape"})
-public class CalculadoraLexer extends Lexer {
+public class SimpleLexer extends Lexer {
 	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -40,7 +40,7 @@ public class CalculadoraLexer extends Lexer {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "';'", "'='", "'int'", "'float'", "'string'", "'if'", "'('", "')'", 
+			null, "';'", "'int'", "'float'", "'string'", "'='", "'if'", "'('", "')'", 
 			"'{'", "'}'", "'else'", "'while'", "'do'", "'for'", "'printf'", "','", 
 			"'scanf'", "'&'", "'=='", "'!='", "'<'", "'<='", "'>'", "'>='", "'*'", 
 			"'/'", "'+'", "'-'"
@@ -89,7 +89,7 @@ public class CalculadoraLexer extends Lexer {
 	}
 
 
-	public CalculadoraLexer(CharStream input) {
+	public SimpleLexer(CharStream input) {
 		super(input);
 		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -124,9 +124,9 @@ public class CalculadoraLexer extends Lexer {
 		"\u0018\u0007\u0018\u0002\u0019\u0007\u0019\u0002\u001a\u0007\u001a\u0002"+
 		"\u001b\u0007\u001b\u0002\u001c\u0007\u001c\u0002\u001d\u0007\u001d\u0002"+
 		"\u001e\u0007\u001e\u0002\u001f\u0007\u001f\u0001\u0000\u0001\u0000\u0001"+
-		"\u0001\u0001\u0001\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001"+
-		"\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001"+
-		"\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001"+
+		"\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0002\u0001\u0002\u0001"+
+		"\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0003\u0001\u0003\u0001"+
+		"\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0004\u0001"+
 		"\u0004\u0001\u0005\u0001\u0005\u0001\u0005\u0001\u0006\u0001\u0006\u0001"+
 		"\u0007\u0001\u0007\u0001\b\u0001\b\u0001\t\u0001\t\u0001\n\u0001\n\u0001"+
 		"\n\u0001\n\u0001\n\u0001\u000b\u0001\u000b\u0001\u000b\u0001\u000b\u0001"+
@@ -164,8 +164,8 @@ public class CalculadoraLexer extends Lexer {
 		"\u0000\u0000\u00005\u0001\u0000\u0000\u0000\u00007\u0001\u0000\u0000\u0000"+
 		"\u00009\u0001\u0000\u0000\u0000\u0000;\u0001\u0000\u0000\u0000\u0000="+
 		"\u0001\u0000\u0000\u0000\u0000?\u0001\u0000\u0000\u0000\u0001A\u0001\u0000"+
-		"\u0000\u0000\u0003C\u0001\u0000\u0000\u0000\u0005E\u0001\u0000\u0000\u0000"+
-		"\u0007I\u0001\u0000\u0000\u0000\tO\u0001\u0000\u0000\u0000\u000bV\u0001"+
+		"\u0000\u0000\u0003C\u0001\u0000\u0000\u0000\u0005G\u0001\u0000\u0000\u0000"+
+		"\u0007M\u0001\u0000\u0000\u0000\tT\u0001\u0000\u0000\u0000\u000bV\u0001"+
 		"\u0000\u0000\u0000\rY\u0001\u0000\u0000\u0000\u000f[\u0001\u0000\u0000"+
 		"\u0000\u0011]\u0001\u0000\u0000\u0000\u0013_\u0001\u0000\u0000\u0000\u0015"+
 		"a\u0001\u0000\u0000\u0000\u0017f\u0001\u0000\u0000\u0000\u0019l\u0001"+
@@ -178,12 +178,12 @@ public class CalculadoraLexer extends Lexer {
 		"\u0000\u0000\u00007\u009a\u0001\u0000\u0000\u00009\u009d\u0001\u0000\u0000"+
 		"\u0000;\u00a2\u0001\u0000\u0000\u0000=\u00ae\u0001\u0000\u0000\u0000?"+
 		"\u00b8\u0001\u0000\u0000\u0000AB\u0005;\u0000\u0000B\u0002\u0001\u0000"+
-		"\u0000\u0000CD\u0005=\u0000\u0000D\u0004\u0001\u0000\u0000\u0000EF\u0005"+
-		"i\u0000\u0000FG\u0005n\u0000\u0000GH\u0005t\u0000\u0000H\u0006\u0001\u0000"+
-		"\u0000\u0000IJ\u0005f\u0000\u0000JK\u0005l\u0000\u0000KL\u0005o\u0000"+
-		"\u0000LM\u0005a\u0000\u0000MN\u0005t\u0000\u0000N\b\u0001\u0000\u0000"+
-		"\u0000OP\u0005s\u0000\u0000PQ\u0005t\u0000\u0000QR\u0005r\u0000\u0000"+
-		"RS\u0005i\u0000\u0000ST\u0005n\u0000\u0000TU\u0005g\u0000\u0000U\n\u0001"+
+		"\u0000\u0000CD\u0005i\u0000\u0000DE\u0005n\u0000\u0000EF\u0005t\u0000"+
+		"\u0000F\u0004\u0001\u0000\u0000\u0000GH\u0005f\u0000\u0000HI\u0005l\u0000"+
+		"\u0000IJ\u0005o\u0000\u0000JK\u0005a\u0000\u0000KL\u0005t\u0000\u0000"+
+		"L\u0006\u0001\u0000\u0000\u0000MN\u0005s\u0000\u0000NO\u0005t\u0000\u0000"+
+		"OP\u0005r\u0000\u0000PQ\u0005i\u0000\u0000QR\u0005n\u0000\u0000RS\u0005"+
+		"g\u0000\u0000S\b\u0001\u0000\u0000\u0000TU\u0005=\u0000\u0000U\n\u0001"+
 		"\u0000\u0000\u0000VW\u0005i\u0000\u0000WX\u0005f\u0000\u0000X\f\u0001"+
 		"\u0000\u0000\u0000YZ\u0005(\u0000\u0000Z\u000e\u0001\u0000\u0000\u0000"+
 		"[\\\u0005)\u0000\u0000\\\u0010\u0001\u0000\u0000\u0000]^\u0005{\u0000"+

@@ -1,4 +1,4 @@
-// Generated from Calculadora.g4 by ANTLR 4.13.1
+// Generated from c://Users//Matheus//Desktop//AntLR//ANTLRTrab//.antlr//Calculadora.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -114,14 +114,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterProgram(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitProgram(this);
-		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -192,14 +184,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitStatement(this);
-		}
 	}
 
 	public final StatementContext statement() throws RecognitionException {
@@ -296,14 +280,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitDeclaration(this);
-		}
 	}
 
 	public final DeclarationContext declaration() throws RecognitionException {
@@ -366,14 +342,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_type; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitType(this);
-		}
 	}
 
 	public final TypeContext type() throws RecognitionException {
@@ -417,14 +385,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_assignment; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterAssignment(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitAssignment(this);
-		}
 	}
 
 	public final AssignmentContext assignment() throws RecognitionException {
@@ -485,14 +445,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_ifStatement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterIfStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitIfStatement(this);
-		}
 	}
 
 	public final IfStatementContext ifStatement() throws RecognitionException {
@@ -588,14 +540,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_whileStatement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterWhileStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitWhileStatement(this);
-		}
 	}
 
 	public final WhileStatementContext whileStatement() throws RecognitionException {
@@ -661,14 +605,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_doWhileStatement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterDoWhileStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitDoWhileStatement(this);
-		}
 	}
 
 	public final DoWhileStatementContext doWhileStatement() throws RecognitionException {
@@ -745,14 +681,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_forStatement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterForStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitForStatement(this);
-		}
 	}
 
 	public final ForStatementContext forStatement() throws RecognitionException {
@@ -858,14 +786,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_printStatement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterPrintStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitPrintStatement(this);
-		}
 	}
 
 	public final PrintStatementContext printStatement() throws RecognitionException {
@@ -943,14 +863,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_scanStatement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterScanStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitScanStatement(this);
-		}
 	}
 
 	public final ScanStatementContext scanStatement() throws RecognitionException {
@@ -1019,14 +931,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_condition; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterCondition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitCondition(this);
-		}
 	}
 
 	public final ConditionContext condition() throws RecognitionException {
@@ -1077,14 +981,6 @@ public class CalculadoraParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).enterExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CalculadoraListener ) ((CalculadoraListener)listener).exitExpression(this);
-		}
 	}
 
 	public final ExpressionContext expression() throws RecognitionException {

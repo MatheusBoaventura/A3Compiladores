@@ -31,10 +31,10 @@ NUMBER=30
 STRING=31
 WS=32
 ';'=1
-'='=2
-'int'=3
-'float'=4
-'string'=5
+'int'=2
+'float'=3
+'string'=4
+'='=5
 'if'=6
 '('=7
 ')'=8
